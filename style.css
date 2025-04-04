@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5ee18a;
+    padding: 10px;
+    color: rgb(11, 11, 11);
+    position: relative;
+}
+.navbar img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.list li {
+    padding: 10px;
+    font-size: medium;
+    font-weight: bolder;
+    
+}
+
+.list li a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}
+
+
+
+#reservationBtn {
+    background-color: #dcc86b;  
+    color: rgb(11, 1, 1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#reservationBtn:active {
+    background-color: rgb(98, 178, 98); 
+}
+
+
+.welcome-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    border: 10px;
+    font-family: corbel;
+}
+
+
+.my-5 {
+    margin-top: 0rem !important;
+    margin-bottom: -0.23rem !important;
+}
+@media (min-width: 1500px) { 
+    .container, .container-sm {
+        max-width: 1500px;
+    }
+    
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --mdb-gutter-x: 10rem;
+    --mdb-gutter-y: 10rem;
+    width: 100%;
+    padding-right: calc(var(--mdb-gutter-x)* 0);
+    padding-left: calc(var(--mdb-gutter-x)* 0);
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#e2cd70;
+}
+.span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel {
+    width: 100%;
+    height: 500px;;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    animation: zoomIn 12s infinite;
+}
+
+.carousel img:nth-child(1) { animation-delay: 0s; }
+.carousel img:nth-child(2) { animation-delay: 3s; }
+.carousel img:nth-child(3) { animation-delay: 6s; }
+.carousel img:nth-child(4) { animation-delay: 9s; }
+
+
+@keyframes zoomIn {
+    0% { opacity: 1; transform: scale(1.2); }
+    25% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+    
+}
+
+.container1 {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c6a300;
+    text-align: center;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #86a356;
+    margin: 0 10px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #86a356;
+}
+
+
+.description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.package {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.price {
+    color: #28a745; 
+    font-size: 24px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.view-package {
+    display: inline-block;
+    background-color: #1e5bdd; 
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius:10px;
+    transition: background-color 0.3s ease;
+}
+
+.view-package:hover {
+    background-color: #f10c0c;
+}
+.row{
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(185, 56, 56);
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    
+}
+
+
+
+.photo-gallery {
+    border: 1px solid red;
+    width: 50%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 1%;
+    
+}
+
+.box {
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+}
